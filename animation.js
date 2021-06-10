@@ -1,8 +1,7 @@
 var id = null;
 function myMove() {
   var elem = document.getElementById("dog-gif");
-  var pos = 100;
-  elem.style.bottom = '465px';
+  var pos = elem.style.left;
   clearInterval(id);
   id = setInterval(frameF, 10);
 
