@@ -42,6 +42,8 @@ h2 {
   height: 100px;
   width: 100px;
   z-index: 3;
+  bottom: 465px;
+  left: 100px;
 }
 
 .left-bar {
