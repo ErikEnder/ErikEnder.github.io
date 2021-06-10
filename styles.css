@@ -1,12 +1,17 @@
 body {
   background-color: #E8E5DA;
   text-align: center;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
+h1 {
+  font-weight: 900;
+}
 h2 {
-  font-size: 1.5em;
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 /* Creating the horizontal and vertical bars on the website */
@@ -89,7 +94,7 @@ h2 {
 }
 
 .content-formatting-left {
-  margin: 10px 10px 0 10px;
+  margin: 10px 5px 0 10px;
   width: 50%;
   float: left;
   z-index: 2;
@@ -102,6 +107,11 @@ h2 {
   float: right;
   z-index: 2;
   position: relative;
+}
+
+#bottom-p {
+  bottom: 30px;
+  margin-top: 0px;
 }
 
 .vali {
