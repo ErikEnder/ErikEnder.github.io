@@ -3,7 +3,7 @@ body {
   text-align: center;
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h1 {
@@ -82,6 +82,8 @@ h2 {
 .content {
   background-color: #e8e5da;
   vertical-align: top;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .background-img {
@@ -98,7 +100,8 @@ h2 {
   width: 50%;
   float: left;
   z-index: 2;
-  position: relative;
+  flex: 1;
+  align-self: flex-start;
 }
 
 .content-formatting-right {
@@ -106,7 +109,8 @@ h2 {
   width: 50%;
   float: right;
   z-index: 2;
-  position: relative;
+  flex: 1;
+  align-self: flex-end;
 }
 
 #bottom-p {
