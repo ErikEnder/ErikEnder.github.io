@@ -11,7 +11,7 @@ h1 {
 }
 h2 {
   font-weight: 700;
-  font-size: 1.3em;
+  color: #e8e5da;
 }
 
 /* Creating the horizontal and vertical bars on the website */
@@ -48,8 +48,7 @@ h2 {
   width: 100px;
   z-index: 3;
   left: 100px;
-  bottom: 465px;
-
+  top: 85px;
 }
 
 .left-bar {
@@ -78,6 +77,7 @@ h2 {
 }
 
 
+/** Main body of website **/
 
 .content {
   background-color: #e8e5da;
@@ -92,11 +92,11 @@ h2 {
   float: left;
   width: 100%;
   height: 100%;
-  left: 0px;
+  left: 0;
 }
 
 .content-formatting-left {
-  margin: 10px 5px 0 10px;
+  margin: 20px 5px 0 20px;
   width: 50%;
   float: left;
   z-index: 2;
@@ -105,7 +105,7 @@ h2 {
 }
 
 .content-formatting-right {
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 30px 0;
   width: 50%;
   float: right;
   z-index: 2;
@@ -113,10 +113,7 @@ h2 {
   align-self: flex-end;
 }
 
-#bottom-p {
-  bottom: 30px;
-  margin-top: 0px;
-}
+/** Vali-Hi link **/
 
 .vali {
   color: #304c89;
@@ -127,16 +124,54 @@ h2 {
   color: #cdc392;
 }
 
-.white-text {
-  color: #e8e5da;
-}
-
 .slideshow-pics {
   height: 300px;
   width: 300px;
 }
 
 @media only screen and (min-width: 1366px) {
+
+  #bigOne {
+    font-size: 4.0em;
+  }
+
+  #bigTwo {
+    font-size: 3.5em;
+  }
+
+  .content {
+    font-size: 1.4em;
+  }
+
+  .left-align {
+    font-size: 1.5em;
+
+  }
+
+  .right-align {
+    font-size: 1.5em;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+  .content {
+    font-size: 1.4em;
+  }
+
+  .content-formatting-left {
+    margin: 40px 5px 0 40px;
+  }
+
+  .content-formatting-right {
+    margin: 20px 40px 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
   .content {
     font-size: 1.5em;
   }
