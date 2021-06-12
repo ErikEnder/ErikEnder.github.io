@@ -6,7 +6,7 @@ function myMove() {
   id = setInterval(frameF, 10);
 
   function frameF() {
-    if (pos == 1150) {
+    if (pos == (screen.width - 100)) {
       elem.style.transform = 'scaleX(-1)';
       id = setInterval(frameB, 10);
     } else {

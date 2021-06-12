@@ -19,31 +19,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="velocity.js"></script>
-
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        $(".dog-gif").velocity({
-            left: "1150px"
-        }, {
-            duration: 10000,
-            easing: 'linear'
-          });
-        });
-    </script>
-
+    <script type="text/javascript" src="animation.js"></script>
 
   </head>
 
-  <body class="text-wrap">
+  <body class="text-wrap" onload="myMove()">
     <table class="outline">
       <tr>
         <td class="corner"><img id="profile" src="Images/me and trix circle.png" alt=""></td>
         <td class="top-bar">
+
           <h1 id="bigOne">Hello!</h1>
           <h2 id="bigTwo">Welcome to my Website</h2></td>
-          <img class="dog-gif" src="Images/is Dog NBG.gif" alt="">
+
+          <img id="dog-gif" src="Images/is Dog NBG.gif" alt="">
+
       </tr>
       <tr>
         <td class="left-bar"><span class="right-align"> Erik </span>
