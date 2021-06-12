@@ -17,7 +17,7 @@ function myMove() {
 
   function frameB() {
       if (pos == 100) {
-      elem.style.transform = 'none';
+      elem.style.display = 'none';
       id = setInterval(frameF, 10);
     } else {
       pos--;
