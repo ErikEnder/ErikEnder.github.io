@@ -1,17 +1,22 @@
 var id = null;
-var barHeight = document.getElementsByClass("top-bar").style.height;
-var screenHeight = screen.height;
 
 function myMove() {
-  var elem = document.getElementById("dog-gif");
+  var barHeight = document.getElementById("top-bar").clientHeight;
+  var barWidth = document.getElementById("top-bar").clientWidth;
+  var cornerWidth = document.querySelector(".corner").clientWidth;
+
+  var windowHeight = window.innerHeight;
+
+
+  var elem = document.getElementsByClassName("dog-container")[0];
   var pos = elem.style.left;
-  elem.style.height = (screenHeight - barHeight) + 'px';
-  
+  var intClientWidth = document.clientWidth;
+
   clearInterval(id);
   id = setInterval(frameF, 10);
 
   function frameF() {
-    if (pos == (screen.width - 100)) {
+    if (pos == (barWidth - cornerWidth)) {
       elem.style.transform = 'scaleX(-1)';
       id = setInterval(frameB, 10);
     } else {
@@ -21,9 +26,8 @@ function myMove() {
   }
 
   function frameB() {
-      if (pos == 100) {
-      elem.style.transform = 'none';
-      id = setInterval(frameF, 10);
+      if (pos == 0) {
+      elem.style.display = 'none';
     } else {
       pos--;
       elem.style.left = pos + 'px';

@@ -25,34 +25,46 @@ h2 {
   background-color: #304c89;
   height: 125px;
   width: 125px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 #profile {
-  height: 125px;
-  width: 125px;
+  height: 100%;
+  width: 100%;
 }
 
-.top-bar {
+#top-bar {
   width: 100%;
-  height: 125px;
+  height: 10vh;
   background-color: #648de5;
   position: relative;
   z-index: 2;
 }
 
-#dog-gif {
-  position: absolute;
-  height: 100px;
+.dog-container {
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100px;
-  z-index: 3;
-  left: 100px;
-  top: 85px;
+  background-color: red;
+  /* z-index: 3; */
+
 }
 
+#dog-gif {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+
+}
+
+
 .left-bar {
-  width: 125px;
+  width: 10%;
   height: 100%;
   background-color: #9eb7e5;
   vertical-align: text-top;
@@ -132,24 +144,24 @@ h2 {
 @media only screen and (min-width: 1366px) {
 
   #bigOne {
-    font-size: 4.0em;
-  }
-
-  #bigTwo {
     font-size: 3.5em;
   }
 
+  #bigTwo {
+    font-size: 3.0em;
+  }
+
   .content {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   .left-align {
-    font-size: 1.5em;
+    font-size: 1.4em;
 
   }
 
   .right-align {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
 }
