@@ -152,6 +152,23 @@ h2 {
 
 }
 
+@media only screen and (max-height: 768) {
+
+  .content {
+    font-size: 1.1em;
+  }
+
+  .left-align {
+    font-size: 1.4em;
+
+  }
+
+  .right-align {
+    font-size: 1.4em;
+  }
+
+}
+
 @media only screen and (min-width: 1600px) {
 
   .content {
