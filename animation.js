@@ -1,7 +1,12 @@
 var id = null;
+var barHeight = document.getElementsByClass("top-bar").style.height;
+var screenHeight = screen.height;
+
 function myMove() {
   var elem = document.getElementById("dog-gif");
   var pos = elem.style.left;
+  elem.style.height = (screenHeight - barHeight) + 'px';
+  
   clearInterval(id);
   id = setInterval(frameF, 10);
 
