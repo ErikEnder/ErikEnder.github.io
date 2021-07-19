@@ -26,8 +26,9 @@ function myMove() {
   }
 
   function frameB() {
-      if (pos == 0) {
+      if (pos == 100) {
       elem.style.display = 'none';
+      id = setInterval(frameF, 10);
     } else {
       pos--;
       elem.style.left = pos + 'px';

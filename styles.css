@@ -3,7 +3,6 @@ body {
   text-align: center;
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
-  font-size: 1.4em;
 }
 
 h1 {
@@ -28,13 +27,13 @@ h2 {
 }
 
 #profile {
-  height: 100%;
-  width: 100%;
+  height: 125px;
+  width: 125px;
 }
 
 #top-bar {
   width: 100%;
-  height: 10vh;
+  height: 10%;
   background-color: #648de5;
   position: relative;
   z-index: 2;
@@ -70,7 +69,7 @@ h2 {
 .left-align {
   float: left;
   margin-left: 7px;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: bold;
 }
 
@@ -79,7 +78,7 @@ h2 {
   margin-top: 15px;
   margin-right: 7px;
   float: right;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: bold;
 }
 
@@ -136,15 +135,24 @@ h2 {
   width: 300px;
 }
 
+@media only screen and (min-width: 800px) and (max-height: 1280px) {
+
+  .content {
+    font-size: 1.8em;
+  }
+
+  .left-align {
+    font-size: 1.4em;
+
+  }
+
+  .right-align {
+    font-size: 1.4em;
+  }
+
+}
+
 @media only screen and (min-width: 1366px) {
-
-  #bigOne {
-    font-size: 3.5em;
-  }
-
-  #bigTwo {
-    font-size: 3.0em;
-  }
 
   .content {
     font-size: 1.3em;
