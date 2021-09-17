@@ -26,9 +26,21 @@ h2 {
   width: 125px;
 }
 
-#profile {
+.profile {
   height: 125px;
   width: 125px;
+}
+
+.hide {
+  display: none;
+}
+
+.profile:hover + .hide {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  color: white;
+
 }
 
 #top-bar {

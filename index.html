@@ -9,24 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="animation.js"></script>
-
   </head>
 
-  <body class="text-wrap" onload="myMove()">
+  <body class="text-wrap">
     <table class="outline">
       <tr>
-        <td class="corner"><img id="profile" src="Images/me and trix circle.png" alt=""></td>
+        <td class="corner">
+          <img class="profile" src="Images/me and trix circle.png" alt=""></img>
+          <div class="hide">Trixie   Erik</div>
+        </td>
         <td id="top-bar">
 
           <h1 id="bigOne">Hello!</h1>
@@ -39,9 +36,7 @@
         </td>
       </tr>
       <tr>
-        <td class="left-bar"><span class="right-align">Erik </span>
-          <br><br>
-          <span class="left-align">Trixie</span>
+        <td class="left-bar">
         </td>
 
         <td class="content">
@@ -141,5 +136,8 @@
           </td>
       </tr>
     </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
   </body>
 </html>
