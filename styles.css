@@ -1,205 +1,212 @@
+/** Color Palette from Coolors
+--------------------
+#134074 - Indigo Dye
+#13315c - Prussian Blue
+#0b2545 - Oxford Blue
+#040404 - Rich Black
+#8da9c4 - Cadet Grey
+#eef4ed - Mint Cream
+
+**/
+
 body {
-  background-color: #E8E5DA;
-  text-align: center;
-  font-family: 'Source Serif Pro', serif;
-  font-weight: 400;
+    background-color: #040404;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
 }
 
-h1 {
-  font-weight: 900;
-}
-h2 {
-  font-weight: 700;
-  color: #e8e5da;
+ul {
+    padding: 0;
+    list-style-type: square;
+    list-style-position: inside;
 }
 
-/* Creating the horizontal and vertical bars on the website */
-.outline {
-  float: left;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.corner {
-  background-color: #304c89;
-  height: 125px;
-  width: 125px;
-}
-
-.profile {
-  height: 125px;
-  width: 125px;
+#intro {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+    
+    
 }
 
-.hide {
-  display: none;
+/** Colored Boxes **/
+.info {
+    display: flex;
+    justify-content: center;
 }
 
-.profile:hover + .hide {
-  display: flex;
-  position: relative;
-  z-index: 2;
-  color: white;
-
+.info-box {
+    display: inherit;
+    height: 80vh; 
+    width: 24%; 
+    float: left; 
+    margin: 0 0 0 0;
+    position: relative; 
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    transition-duration:0.5s;
 }
 
-#top-bar {
-  width: 100%;
-  height: 10%;
-  background-color: #648de5;
-  position: relative;
-  z-index: 2;
+/** Center inner circle **/
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
-.dog-container {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-
+.expand {
+    width: 40%;
+    height: 85vh;
+}
+.shrink {
+    width: 20%;
 }
 
-#dog-gif {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  left: 0;
-  bottom: 0;
-  z-index: 3;
+/** Emulating the same effect as the boxes **/
+
+.info-circle {
+    display: inherit;
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+    height: 15%;
+    background-color: #040404;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    transition-duration:0.5s;
+    
+}
+
+.cir-expand {
+    width: 80%;
+    height: 80%;
+}
+
+.cir-shrink {
+    width: 10%;
+    height: 10%;
+}
+
+/** Text manipulation inside of circles **/
+
+/** Div surrounding titles for positioning **/
+.info-title {
+    display: inherit;
+    position: relative;
+    margin-bottom: 0;
+    -webkit-transition-duration:0.5;
+    -moz-transition-duration:0.5;
+    transition-duration:0.5s;
+}
+
+/** Text Sizing for Titles **/
+.title-size {
+    font-size: 90%;
+}
+
+/** Animations for text movement **/
+.title-move {
+    margin-bottom: 80%;
+    font-size: 2rem;
+}
+
+/** Descriptions inside circles **/
+.info-content { 
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 150%;
+    overflow-x: auto;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding-left: 5px;
+}
+.display-content {
+    display: flex;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#trixie-pic {
+    display: flex;
+    position: absolute;
+    width: 7vw;
+    height: 15vh;
+    left: 2.5%;
+    top: 5px;
+}
+
+.click-me {
+    display: flex;
+    position: absolute;
+    left: 2.5%;
+    top: 65px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.click-animate {
+    animation-name: alert;
+    animation-iteration-count: 1;
+    animation-duration: 0.10s;
+}
+
+@keyframes alert {
+    from {
+        color: white;
+    }
+    to {
+        color: maroon;
+    }
 }
 
 
-.left-bar {
-  width: 10%;
-  height: 100%;
-  background-color: #9eb7e5;
-  vertical-align: text-top;
-  position: relative;
-  z-index: 2;
+.trixie-animate {
+    animation-name: rollOut;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-fill-mode: forward;
 }
 
-.left-align {
-  float: left;
-  margin-left: 7px;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-.right-align {
-  margin-left: 20px;
-  margin-top: 15px;
-  margin-right: 7px;
-  float: right;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-
-/** Main body of website **/
-
-.content {
-  background-color: #e8e5da;
-  vertical-align: top;
-  display: inline-flex;
-  flex-direction: column;
-}
-
-.background-img {
-  z-index: 1;
-  position: fixed;
-  float: left;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
-
-.content-formatting-left {
-  margin: 20px 5px 0 20px;
-  width: 50%;
-  float: left;
-  z-index: 2;
-  flex: 1;
-  align-self: flex-start;
-}
-
-.content-formatting-right {
-  margin: 20px 20px 30px 0;
-  width: 50%;
-  float: right;
-  z-index: 2;
-  flex: 1;
-  align-self: flex-end;
-}
-
-/** Vali-Hi link **/
-
-.vali {
-  color: #304c89;
-  font-weight: bold;
-}
-
-.vali:hover {
-  color: #cdc392;
-}
-
-.slideshow-pics {
-  height: 300px;
-  width: 300px;
-}
-
-@media only screen and (min-width: 800px) and (max-height: 1280px) {
-
-  .content {
-    font-size: 1.8em;
-  }
-
-  .left-align {
-    font-size: 1.4em;
-
-  }
-
-  .right-align {
-    font-size: 1.4em;
-  }
-
-}
-
-@media only screen and (min-width: 1366px) {
-
-  .content {
-    font-size: 1.3em;
-  }
-
-  .left-align {
-    font-size: 1.4em;
-
-  }
-
-  .right-align {
-    font-size: 1.4em;
-  }
-
-}
-
-@media only screen and (min-width: 1600px) {
-
-  .content {
-    font-size: 1.4em;
-  }
-
-  .content-formatting-left {
-    margin: 40px 5px 0 40px;
-  }
-
-  .content-formatting-right {
-    margin: 20px 40px 0 0;
-  }
-
-}
-
-@media only screen and (min-width: 1920px) {
-
-  .content {
-    font-size: 1.5em;
-  }
+@keyframes rollOut {
+    from {
+        left: 2.5%;
+        transform: rotate(0);
+    }
+    to {
+        left: 90%;
+        transform: rotate(1080deg);
+    }
 }

@@ -1,143 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Erik Ender Portfolio</title>
+        <title>Erik Ender's Website</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-  </head>
-
-  <body class="text-wrap">
-    <table class="outline">
-      <tr>
-        <td class="corner">
-          <img class="profile" src="Images/me and trix circle.png" alt=""></img>
-          <div class="hide">Trixie   Erik</div>
-        </td>
-        <td id="top-bar">
-
-          <h1 id="bigOne">Hello!</h1>
-          <h2 id="bigTwo">Welcome to my Website</h2>
-
-          <div class="dog-container">
-            <img id="dog-gif" src="Images/is Dog TRUE.gif" alt="">
-          </div>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="left-bar">
-        </td>
-
-        <td class="content">
-            <img class="background-img" src="Images/test background.png" alt="">
-
-            <p class="content-formatting-left" id="top-p">I'm Erik Ender, web developer for the
-            <a class="vali" href="https://www.valihi.com/">Vali-Hi Drive-In</a> over
-            the Summer dating from 2010 to 2021.  I didn't create the website or its design initially,
-            but I do update it weekly and last year I updated the entire framework from PHP to HTML/CSS
-            free-of-charge for my employer, due to the lack of necessity for any back-end and just my general
-            hatred of how it was originally written!</p>
-
-            <p class="content-formatting-right">I attended <b>Saint Paul College</b> from 2014 - 2017 and graduated
-            with an Associate's in Computer Programming.  I chose not to attend University due to personal reasons
-            not related to my educational background, however I generally excelled in school environments as I
-            tend to learn quickly and put what I learn into practice.</p>
-
-            <p class="content-formatting-left">I was always an artistic person growing up, whether it was doodling
-            on homework or making actual drawings in my spare time.  While I won't claim to be an expert, I will make
-            the bold claim that I can at least tell a decent design from a horrendous one when it comes to
-            websites. I've included a slideshow of some pictures I've made if you're curious, one of which definitely
-            belongs in an art museum. (hint: 5)<br><br>
-
-            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Click 4 Pics</button>
-
-            <p id="bottom-p" class="content-formatting-right">I believe in putting my all into the things I do, and if I
-            find a goal I'm passionate about I will drive myself to the brink of insanity trying to accomplish it.
-            But with that being said, I don't consider myself a rough-around-the-edges person, and I think most
-            people who know me would tell you that I'm pretty easy-going and I love to make people laugh.</p>
-
-
-
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Artistic Creations</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                      <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                      </ol>
-
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img class="slideshow-pics" src="Images/horse drawing.jpg" alt="Los Angeles">
-                        </div>
-
-                        <div class="item">
-                          <img class="slideshow-pics" src="Images/wolf drawing.jpg" alt="Chicago">
-                        </div>
-
-                        <div class="item">
-                          <img class="slideshow-pics" src="Images/squirrel drawing.jpg" alt="New York">
-                        </div>
-
-                        <div class="item">
-                          <img class="slideshow-pics" src="Images/dragon drawing.jpg" alt="New York">
-                        </div>
-
-                        <div class="item">
-                          <img class="slideshow-pics" src="Images/bunny duck.png" alt="New York">
-                        </div>
-                      </div>
-
-                      <!-- Left and right controls -->
-                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
+    <body>
+        <div id="intro">
+            <img id="trixie-pic" src="images\me and trix circle.png" alt="Me and my Dog">
+            <span class="click-me">Click Me!</span>
+            <h1>Welcome to My Website <br>
+                Feel Free to Explore</h1>
+        </div>
+       
+        <div class="info">
+            <div class="info-box center" style="background-color:#134074;">
+                <div class="info-circle">
+                    <div class="info-title"><h2 class="title-size">Skills</h2></div>
+                    <div class="info-content">
+                        <table class="table-cleanup">
+                            <tr>
+                                <th>Front-End</th>
+                                <th>Back-End</th>
+                                <th>Misc.</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>JQuery</li>
+                                        <li>Some React</li>
+                                        <li>Some Bootstrap</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>C#</li>
+                                        <li>C++</li>
+                                        <li>Python</li>
+                                        <li>Basic SQL</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <li>Can navigate a computer</li>
+                                    <li>Can use Google</li>
+                                    <li>Basic photoshop/GIMP</li>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
                 </div>
-
-              </div>
             </div>
+            <div class="info-box center" style="background-color:#13315c;">
+                <div class="info-circle">
+                    <div class="info-title"><h2 class="title-size">Experience</h2></div>
+                    <div class="info-content">
+                        <ul class="clean-up-list">
+                            <li>10 years of Front-End work for the Vali-Hi Drive-In</li>
+                            <li>Have also dealt with unsavory server hosts and migrated the site,
+                                including setting up new name servers, new admin logins, etc.</li>
+                            <li>Other than the small amount of HTML I learned while earning my degree,
+                                I am entirely self-taught in front-end development.  I do try to 
+                                keep my code looking professional and clean, though.  And I know
+                                I still have plenty more to learn!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box center" style="background-color:#0b2545;">
+                <div class="info-circle">
+                    <div class="info-title"><h2 class="title-size">Personality</h2></div>
+                    <div class="info-content">
+                        <ul class="clean-up-list">
+                            <li>Funny (or at least I've been told so)</li>
+                            <li>Generally easy going</li>
+                            <li>Creative</li>
+                            <li>Shy, but personable once comfortable</li>
+                            <li>Owner of the best girl, Trixie</li>
+                            <li>Hard working</li>
+                            <li>Smart enough to know when I'm wrong</li>
+                            <li>Passionate about my ideals</li>
+                            <li>Very friendly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box center" style="background-color:#8da9c4;">
+                <div class="info-circle">
+                    <div class="info-title"><h2 class="title-size">Credentials</h2></div>
+                    <div class="info-content">
+                        <ul>
+                            <li>Associate's in Computer Programming from St. Paul College</li>
+                            <li>This website</li>
+                            <li>Some small projects in the past, like a Tic-Tac-Toe game in C#</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            
 
-          </td>
-      </tr>
-    </table>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="animation.js"></script>
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
