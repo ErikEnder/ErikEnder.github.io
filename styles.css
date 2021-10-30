@@ -18,12 +18,6 @@ body {
     text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
 }
 
-ul {
-    padding: 0;
-    list-style-type: square;
-    list-style-position: inside;
-}
-
 #intro {
     display: flex;
     position: relative;
@@ -133,6 +127,10 @@ ul {
     overflow-x: auto;
 }
 
+#misc-fix {
+    height: initial;
+}
+
 th {
     text-align: center;
 }
@@ -146,7 +144,14 @@ td {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
+}
+
+.nt-lists {
+    padding: 0;
+    list-style-type: square;
+    list-style-position: inside;
+    height: 265px;
 }
 
 @keyframes fadeInOpacity {
