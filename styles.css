@@ -81,8 +81,8 @@ body {
 }
 
 .cir-expand {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 
 .cir-shrink {
@@ -118,48 +118,69 @@ body {
     opacity: 0;
     display: none;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 25%;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 150%;
-    overflow-x: auto;
+}
+
+.center-tables {
+    justify-content: center;
+    align-items: center;
+    left: initial;
+
 }
 
 #misc-fix {
     height: initial;
 }
 
+table {
+    width: 80%;
+    height: 30%;
+    margin: auto;
+}
 th {
     text-align: center;
 }
 
 td {
     padding-left: 5px;
+    vertical-align: middle;
 }
+
+/* #skills-format {
+    top: 20%;
+} */
 .display-content {
     display: flex;
-	opacity: 1;
 	animation-name: fadeInOpacity;
+    animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+	animation-duration: 0.5s;
 }
 
 .nt-lists {
     padding: 0;
     list-style-type: square;
     list-style-position: inside;
-    height: 265px;
+    /* I don't know why they need this 1px of height defined, but the lists
+    will push out the browser otherwise.  Just leave it. */
+    height: 1px;
 }
 
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
+        transform: scale(0,0);
 	}
 	100% {
 		opacity: 1;
+        transform: scale(1,1);
 	}
 }
 
