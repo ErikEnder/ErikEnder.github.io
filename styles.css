@@ -222,7 +222,7 @@ td {
     display: flex;
     position: absolute;
     width: 7vw;
-    height: 15vh;
+    height: 100%;
     bottom: 0;
 }
 
