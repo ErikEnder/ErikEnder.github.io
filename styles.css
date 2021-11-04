@@ -13,6 +13,7 @@ body {
     background-color: #040404;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: white;
     text-align: center;
     color: white;
@@ -25,14 +26,9 @@ h1 {
 }
 
 #intro {
-    display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
     height: 15vh;
-    width: 100vw;
-    margin: 0 0 0 0;
-    
+    width: 100vw;    
     
 }
 
@@ -191,10 +187,8 @@ td {
 }
 
 .click-me {
-    display: flex;
-    position: absolute;
-    left: 2.5%;
-    top: 11vh;
+    position: relative;
+    bottom: 0;
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -215,13 +209,21 @@ td {
     }
 }
 
+.trix-click {
+    position: relative;
+    float: left;
+    left: 2.5vw;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #trixie-pic {
     display: flex;
     position: absolute;
     width: 7vw;
     height: 15vh;
-    left: 2.5%;
-    top: 5px;
+    bottom: 0;
 }
 
 .trixie-animate {
@@ -233,11 +235,11 @@ td {
 
 @keyframes rollOut {
     from {
-        left: 2.5%;
+        left: 0;
         transform: rotate(0);
     }
     to {
-        left: 90%;
+        left: 87.5vw;
         transform: rotate(1080deg);
     }
 }
