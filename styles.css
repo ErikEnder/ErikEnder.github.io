@@ -23,14 +23,19 @@ body {
 h1 {
     font-weight: 700;
     font-style: italic;
-    margin: 0;
 }
 
 #intro {
     position: relative;
     height: 15vh;
-    width: 100vw;    
-    
+    width: 100vw;  
+}
+
+.welcome {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    margin: auto;
 }
 
 /** Colored Boxes **/
@@ -40,7 +45,7 @@ h1 {
 }
 
 .info-box {
-    display: inherit;
+    display: flex;
     height: 80vh; 
     width: 24%; 
     float: left; 
@@ -181,6 +186,9 @@ td {
 		opacity: 0;
         transform: scale(0,0);
 	}
+    95% {
+        opacity: 0.2;
+    }
 	100% {
 		opacity: 1;
         transform: scale(1,1);
@@ -248,5 +256,44 @@ td {
     to {
         left: 0;
         transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 90%;
+        float: none;
+    }
+
+    .title-move {
+        margin-bottom: 95%;
+        font-size: 2rem;
+    }
+
+    .trixie-animate {
+        animation-duration: 10s;
+    }
+    
+    @keyframes rollOut {
+        0% {
+            left: 0;
+            transform: rotate(0);
+        }
+        50% {
+            left: 76vw;
+            transform: rotate(720deg);
+        }
+        to {
+            left: 0;
+            transform: rotate(0);
+            z-index: -1;
+        }
     }
 }
