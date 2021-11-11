@@ -261,6 +261,9 @@ td {
 
 @media screen and (max-width: 540px) {
     
+    body {
+        font-size: 0.8rem;
+    }
     .info {
         flex-direction: column;
         justify-content: center;
