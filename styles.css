@@ -160,9 +160,6 @@ td {
     vertical-align: middle;
 }
 
-/* #skills-format {
-    top: 20%;
-} */
 .display-content {
     display: flex;
 	animation-name: fadeInOpacity;
@@ -280,23 +277,21 @@ td {
         font-size: 2rem;
     }
 
-    .trixie-animate {
-        animation-duration: 10s;
+    .click-me {
+        display: none;
+        position: absolute;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        bottom: 15%;
     }
-    
-    @keyframes rollOut {
-        0% {
-            left: 0;
-            transform: rotate(0);
-        }
-        50% {
-            left: 76vw;
-            transform: rotate(720deg);
-        }
-        to {
-            left: 0;
-            transform: rotate(0);
-            z-index: -1;
-        }
+
+    #trixie-pic {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        bottom: 0;
     }
 }
