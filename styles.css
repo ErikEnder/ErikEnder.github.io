@@ -20,6 +20,10 @@ body {
     text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 2px 0 #000, -1px 0 0 #000;
 }
 
+li {
+    padding-bottom: 10px;
+}
+
 h1 {
     font-weight: 700;
     font-style: italic;
@@ -36,6 +40,7 @@ h1 {
     text-align: center;
     height: 100%;
     margin: auto;
+    font-size: 1.2rem;
 }
 
 /** Colored Boxes **/
@@ -56,7 +61,7 @@ h1 {
     transition-duration:0.5s;
 }
 
-/** Center inner circle **/
+/** Center inner circle within box, not content**/
 .center {
     justify-content: center;
     align-items: center;
@@ -127,19 +132,15 @@ h1 {
     display: none;
     position: absolute;
     top: 25%;
-    justify-content: center;
-    align-items: center;
     text-align: left;
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 150%;
 }
 
-.center-tables {
-    justify-content: center;
-    align-items: center;
-    left: initial;
-
+.skills-headers {
+    font-size: 1.4rem;
+    text-decoration: underline;
 }
 
 #misc-fix {
@@ -147,17 +148,12 @@ h1 {
 }
 
 table {
-    width: 80%;
-    height: 30%;
+    width: 90%;
+    height: 50%;
     margin: auto;
 }
 th {
     text-align: center;
-}
-
-td {
-    padding-left: 5px;
-    vertical-align: middle;
 }
 
 .display-content {
@@ -170,12 +166,9 @@ td {
 }
 
 .nt-lists {
-    padding: 0;
+    font-size: 1.3rem;
     list-style-type: square;
     list-style-position: inside;
-    /* I don't know why they need this 1px of height defined, but the lists
-    will push out the browser otherwise.  Just leave it. */
-    height: 1px;
 }
 
 @keyframes fadeInOpacity {
@@ -258,9 +251,6 @@ td {
 
 @media screen and (max-width: 540px) {
     
-    body {
-        font-size: 0.8rem;
-    }
     .info {
         flex-direction: column;
         justify-content: center;
@@ -277,21 +267,23 @@ td {
         font-size: 2rem;
     }
 
-    .click-me {
-        display: none;
-        position: absolute;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-        bottom: 15%;
+    .trixie-animate {
+        animation-duration: 10s;
     }
-
-    #trixie-pic {
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 80px;
-        height: 80px;
-        bottom: 0;
+    
+    @keyframes rollOut {
+        0% {
+            left: 0;
+            transform: rotate(0);
+        }
+        50% {
+            left: 76vw;
+            transform: rotate(720deg);
+        }
+        to {
+            left: 0;
+            transform: rotate(0);
+            z-index: -1;
+        }
     }
 }
