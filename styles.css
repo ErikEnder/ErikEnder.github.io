@@ -37,9 +37,9 @@ h1 {
 
 .welcome {
     display: inline-block;
+    position: relative;
     text-align: center;
     height: 100%;
-    margin: auto;
     font-size: 1.2rem;
 }
 
@@ -136,6 +136,7 @@ h1 {
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 150%;
+    height: 0;
 }
 
 .skills-headers {
@@ -246,6 +247,40 @@ th {
     to {
         left: 0;
         transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 1280px){
+    
+    li {
+        padding-bottom: 10px;
+    }
+
+    .welcome {
+        display: flex;
+        position: relative;
+        font-size: 1rem;
+        bottom: 10%;
+        left: 37%;
+        width: fit-content;
+    }
+
+    .skills-headers {
+        font-size: 1.2rem;
+    }
+    
+    .nt-lists {
+        font-size: 0.9rem;
+    }
+
+    .info-content {
+        font-size: 0.8rem;
+        line-height: 125%;
+    }
+
+    table {
+        width: 80%;
+        height: 40%;
     }
 }
 
