@@ -14,7 +14,7 @@ functionality and required a lot of selecting and replacing values.  Although no
 was also a struggle.
 
 To use the site you must first provide an e-mail address and password.
-The regex for these is not overly strict, and they do not have to be valid or real.  
+The regex for these is not overly strict, and they do not have to be real, only valid for the parameters set.  
 
 E-mail must fit a name@host.type structure, but could otherwise be gibberish EX: ducky@periwinkle.col
 Password must just not be empty
