@@ -6,7 +6,7 @@ function verifyEmail() {
   const regexPass = new RegExp('[a-zA-Z0-9]');
 
   if ((regex.test(email)) && (regexPass.test(password))) {
-    window.location.href = "index.html"
+    window.location.href = "map.html"
   } else {
     alert('Invalid login.')
   }
