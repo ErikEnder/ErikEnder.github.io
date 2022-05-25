@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Connects to the Google Fonts API to import a font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="resource/styles/styles.css">
+    </head>
+    <body>
+        <!-- Holds the form and torches -->
+        <div class="form-container">
+            <div>
+                <img src="resource/images/Torch_Gif.gif" alt="Flickering Torch">
+            </div>
+            <!-- Holds specifically the form -->
+            <div class="form-holder">
+                <!-- Styles the form -->
+                <form class="form-style" id="login-form">
+                    <div><h2>Sign up <br> 
+                        or <br> Login Here</h2></div>
+                    <div>
+                        <!-- Input accepts user email to parse for ReGex -->
+                        <label for="email">Email: </label><br>
+                        <input type="text" id="email" name="email" placeholder="name@host.com" style="height: 20px; border: 2px solid black;" required><br>
+                    </div>
+                    <div>
+                        <!-- Input accepts user password -->
+                        <label for="password">Password: </label><br>
+                        <input type="password" id="password" name="password" style="height: 20px; border: 2px solid black;" required>
+                    </div>
+                    <div>
+                        <!-- Button calls verifyEmail to compare the inputted email and password -->
+                        <button type="button" class="submit-button" onclick=verifyEmail()>Take Up Arms <img class="submit-icon" src="resource/images/sword icon.png" alt="Sword Picture"></button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img src="resource/images/Torch_Gif.gif" alt="Flickering Torch">
+            </div>
+        </div>
+        
+        <script src="resource/scripts/scripts.js" async defer></script>
+    </body>
+</html>

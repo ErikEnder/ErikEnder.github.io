@@ -1,163 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Connects to the Google Fonts API to import a font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
-    <title>Erik Ender's Website</title>
+        <link rel="stylesheet" href="resource/styles/styles.css">
+    </head>
+    <body>
+        <!-- Container to allow for Flexbox usage across page-->
+        <div class="container">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div id="intro">
-        <div class="trix-click">
-            <img id="trixie-pic" src="Images\me and trix circle.png" alt="Me and my Dog">
-            <div class="click-me">Click Me!</div>
-        </div>
-        <div class="welcome">
-            <h1>Welcome to My Website <br>
-                Feel Free to Explore</h1>
-        </div>
-
-        <!-- Entirety of Boxes/Circles and information within -->
-        <div class="info">
-            <div class="info-box center" style="background-color:#8da9c4;">
-                <div class="info-circle">
-                    <div class="info-title">
-                        <h2 class="title-size">Skills</h2>
-                    </div>
-                    <div class="info-content">
-                        <table>
-                            <tr class="skills-headers">
-                                <th>Front-End</th>
-                                <th>Back-End</th>
-                                <th id="misc-fix">Misc.</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>JQuery</li>
-                                        <li>Some React</li>
-                                        <li>Some Bootstrap</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Java</li>
-                                        <li>C#</li>
-                                        <li>C++</li>
-                                        <li>Python</li>
-                                        <li>Basic SQL</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Can navigate a computer</li>
-                                        <li>Can use Google</li>
-                                        <li>Basic photoshop/GIMP</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+            <!-- The map on the "front page" -->
+            <div id="map-page">
+                <img class="overworld" src="resource/images/map page.jpg" alt="Overworld Map">
             </div>
-            <div class="info-box center" style="background-color:#134074;">
-                <div class="info-circle">
-                    <div class="info-title">
-                        <h2 class="title-size">Experience</h2>
-                    </div>
-                    <div class="info-content">
-                        <table>
-                            <tr>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>10 years of Front-End work for the Vali-Hi Drive-In</li>
-                                        <li>Have also dealt with unsavory server hosts and migrated the site,
-                                            including setting up new name servers, new admin logins, etc.</li>
-                                        <li>Other than the small amount of HTML/CSS I learned while earning my degree,
-                                            I am entirely self-taught in front-end development. I do try to
-                                            keep my code looking professional and clean, though. And I know
-                                            I still have plenty more to learn!
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
+            <!-- Container holding the right-hand side content allowing for Flexbox formatting-->
+            <div class="info-container">
+                <!-- Class styling the header -->
+                <div class="header-cont">
+                    <h1>Welcome, brave adventurer.</h1>
+                </div>
+                <!-- Container for "quest guide"/story -->
+                <div class="quest-dialogue">
+                    <p>Your camp is set, and your trials await.</p>
+                    <p>Something has gone amiss within the King's castle, and a horde of otherworldly horrors have wasted no time
+                        desecrating the kingdom.</p>
+                    <p>Accompanied only by your blade and wits, and perhaps a companion or two, you must fight back the terrible
+                        scourge that has encompassed the land and retake the kingdom's throne.  Who knows?  Perhaps you will be the one
+                        to sit upon it in due time.
+                    </p>
+                    <!-- Navigation Bar -->
+                    <div class="nav-bar">
+                        <a href="camp.html" class="nav-link">Go to Camp</a>
+                        <a href="login.html" class="nav-link">Return to Login</a>
+                        <a href="contact.html" class="nav-link">Contact Form</a>
                     </div>
                 </div>
-            </div>
-            <div class="info-box center" style="background-color:#13315c;">
-                <div class="info-circle">
-                    <div class="info-title">
-                        <h2 class="title-size">Personality</h2>
-                    </div>
-                    <div class="info-content">
-                        <table>
-                            <tr>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Funny (or at least I've been told so)</li>
-                                        <li>Generally easy going</li>
-                                        <li>Creative</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Shy, but personable once comfortable</li>
-                                        <li>Owner of the best girl, Trixie</li>
-                                        <li>Hard working</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Smart enough to know when I'm wrong</li>
-                                        <li>Passionate about my ideals</li>
-                                        <li>Very friendly</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="info-box center" style="background-color:#0b2545;">
-                <div class="info-circle">
-                    <div class="info-title">
-                        <h2 class="title-size">Credentials</h2>
-                    </div>
-                    <div class="info-content">
-                        <table>
-                            <tr>
-                                <td>
-                                    <ul class="nt-lists">
-                                        <li>Associate's in Computer Programming from St. Paul College</li>
-                                        <li>This website</li>
-                                        <li>Some small projects in the past, like a Tic-Tac-Toe game in C++ and a Bulls
-                                            and Cows game (basically Password) in C#</li>
-                                        <li>Private Discord Bot using Python, capable of basic text-manipulation and
-                                            posting images from a directory, among other things.</li>
-                                        <li>Hopefully more to come!</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                
             </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-</body>
-
+        
+        <script src="" async defer></script>
+    </body>
 </html>

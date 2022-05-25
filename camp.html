@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Connects to the Google Fonts API to import a font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="resource/styles/styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="resource/scripts/customize.js" async defer></script>
+
+        <!-- Sprites taken from: 
+        https://opengameart.org/content/sorlo-ultimate-smash-friends: Wizard
+        https://opengameart.org/content/animated-warrior: Knight(s)
+        https://opengameart.org/content/lpc-wolf-animation: Wolf
+        -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- Beginning of Table HTML -->
+            <div class="table-container">
+                <!-- Table containing party models and info -->
+                <table class="party-table">
+                    <tr>
+                        <th class="character-name" >Party</th>
+                        <th>Stats</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Character's model -->
+                            <p class="character-name" id="avatar-sheet"> </p>
+                            <img src="resource/images/animations/m knight no bg.gif" class="portrait" id="avatar" alt="Male Avatar">
+                        </td>
+
+                        <!-- Character's stats -->
+                        <td class="stats">
+                            LVL: 1 <br>
+                            <span class="hp">HP: 100/100 <br></span>
+                            <span class="mp">MP: 50/50 <br></span>
+                            <span class="xp">XP: 0/100</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p  class="character-name" id="friend-sheet"> </p>
+                            <img src="resource/images/animations/f knight no bg.gif" class="portrait" id="best-friend" alt="Female Avatar">
+                        </td>
+                        <td class="stats">
+                            LVL: 1 <br>
+                            <span class="hp">HP: 100/100 <br></span>
+                            <span class="mp">MP: 50/50 <br></span>
+                            <span class="xp">XP: 0/100</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p  class="character-name" id="wizard-sheet"> </p>
+                            <img src="resource/images/animations/wizard no bg.gif" class="portrait" alt="Wizard Avatar">
+                        </td>
+                        <td class="stats">
+                            LVL: 1 <br>
+                            <span class="hp">HP: 75/75 <br></span>
+                            <span class="mp">MP: 100/100 <br></span>
+                            <span class="xp">XP: 0/100</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p  class="character-name" id="dog-sheet"> </p>
+                            <img src="resource/images/animations/wolf no bg.gif" class="portrait" alt="Dog Avatar">
+                        </td>
+                        <td class="stats">
+                            LVL: 1 <br>
+                            <span class="hp">HP: 125/125 <br></span>
+                            <span class="mp">MP: 25/25 <br></span>
+                            <span class="xp">XP: 0/100</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End of Table HTML -->
+            <!-- Beginning of Form HTML -->
+            <div class="form-holder">
+                <form class="form-style" style="padding-top: 20px;">
+                    <!-- Div containing character rename inputs -->
+                    <div class="center">
+                        <label for="avatarName">Name your champion: </label>
+                        <input type="text" name="avatarName" id="avatar-name" placeholder="Champion">
+                    </div>
+                    <div class="center">
+                        <label for="friendName">Name your best friend: </label>
+                        <input type="text" name="friendName" id="friend-name" placeholder="Best Friend">
+                    </div>
+                    <div class="center">
+                        <label for="dogName">Name your loyal hound: </label>
+                        <input type="text" name="dogName" id="dog-name" placeholder="Chomper">
+                    </div>
+
+                    <!-- Div containing inputs for changing character models -->
+                    <div class="center">
+                        <p>Choose player model:</p>
+                        <input type="radio" id="maleA" name="avatar_model" value="amale" checked="checked">
+                        <label for="maleA">One</label>
+                        <input type="radio" id="femaleA" name="avatar_model" value="afemale">
+                        <label for="femaleA">Two</label>
+                        <input type="radio" id="wizardA" name="avatar_model" value="awizard">
+                        <label for="wizardA">Three</label>
+                        <input type="radio" id="dogA" name="avatar_model" value="adog">
+                        <label for="dogA">Four</label>
+                    </div>
+                    <div class="center form-div">
+                        <p>Choose best friend's model:</p>
+                        <input type="radio" id="maleB" name="friend_model" value="bmale">
+                        <label for="maleB">One</label>
+                        <input type="radio" id="femaleB" name="friend_model" value="bfemale" checked="checked">
+                        <label for="femaleB">Two</label>
+                        <input type="radio" id="wizardB" name="friend_model" value="bwizard">
+                        <label for="wizardB">Three</label>
+                        <input type="radio" id="dogB" name="friend_model" value="bdog">
+                        <label for="dogB">Four</label>
+                    </div>
+                    <!-- Div containing button for calling customizeParty() function, eventhandler added in customize.js-->
+                    <div class="form-div">
+                        <button type="button" class="submit-button" id="customize">Rewrite History!</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div>
+                <div class="info-container">
+                    <!-- Div providing links to where Sprites were sourced from to give credit -->
+                    <div class="header-cont">
+                        <p>Sprites sourced from: <br>
+                            <a href="https://opengameart.org/content/sorlo-ultimate-smash-friends">Wizard</a>
+                            <a href="https://opengameart.org/content/animated-warrior">Knight</a>
+                            <a href="https://opengameart.org/content/lpc-wolf-animation">Wolf</a></p>
+                    </div>
+                    <div class="quest-dialogue">
+                        <h2>Shop</h2>
+                        <!-- Table that gets generated via createShop function -->
+                        <table>
+                            <tr>
+                                <th>Price</th>
+                                <th>Item</th>
+                            </tr>
+                            <tr>
+                                <td class="shop-price" id="price0"></td>
+                                <td class="shop-item" id="item0"></td>
+                                <td><button type="button" class="submit-button buy-button" value="0">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td id="price1"></td>
+                                <td id="item1"></td>
+                                <td><button type="button" class="submit-button buy-button" value="1">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td id="price2"></td>
+                                <td id="item2"></td>
+                                <td><button type="button" class="submit-button buy-button" value="2">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td id="price3"></td>
+                                <td id="item3"></td>
+                                <td><button type="button" class="submit-button buy-button" value="3">Buy</button></td>
+                            </tr>
+                            <tr>
+                                <td id="price4"></td>
+                                <td id="item4"></td>
+                                <td><button type="button" class="submit-button buy-button" value="4">Buy</button></td>
+                            </tr>
+                        </table>
+                        <!-- Button that forces table to regenerate values -->
+                        <div class="center padding">
+                            <button type="button" class="submit-button center" onclick=createShop()>Refresh Store</button>
+                        </div>
+                        
+                        <div class="nav-bar">
+                            <a href="index.html" class="nav-link">View your Map</a>
+                            <a href="login.html" class="nav-link">Return to Login</a>
+                            <a href="contact.html" class="nav-link">Contact Form</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
