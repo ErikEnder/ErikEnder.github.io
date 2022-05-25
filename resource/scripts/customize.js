@@ -19,9 +19,9 @@ function buildPage() {
 // Function that creates default characters
 function initialize() {
     window.avatar = new Character("Champion", 1, 100, 50, 0); // Creates main character
-    window.friend = new Character("Best Friend", 1, 100, 50, 0); // Creates main side character
-    window.wizard = new Character("Wizard", 1, 75, 100, 0); // Creates Wizard
-    window.dog = new Character("Hound", 1, 125, 25, 0); // Creates dog companion
+    window.friend = new Character("Sally", 1, 100, 50, 0); // Creates main side character
+    window.wizard = new Character("Gilroy The Wise", 1, 75, 100, 0); // Creates Wizard
+    window.dog = new Character("Chomper", 1, 125, 25, 0); // Creates dog companion
 
     // Sets Character names in the party table
     $("#avatar-sheet").text(avatar.name);
