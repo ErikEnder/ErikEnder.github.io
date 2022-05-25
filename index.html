@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- Connects to the Google Fonts API to import a font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,39 +15,38 @@
         <link rel="stylesheet" href="resource/styles/styles.css">
     </head>
     <body>
-        <!-- Container to allow for Flexbox usage across page-->
-        <div class="container">
-
-            <!-- The map on the "front page" -->
-            <div id="map-page">
-                <img class="overworld" src="resource/images/map page.jpg" alt="Overworld Map">
+        <!-- Holds the form and torches -->
+        <div class="form-container">
+            <div>
+                <img src="resource/images/Torch_Gif.gif" alt="Flickering Torch">
             </div>
-            <!-- Container holding the right-hand side content allowing for Flexbox formatting-->
-            <div class="info-container">
-                <!-- Class styling the header -->
-                <div class="header-cont">
-                    <h1>Welcome, brave adventurer.</h1>
-                </div>
-                <!-- Container for "quest guide"/story -->
-                <div class="quest-dialogue">
-                    <p>Your camp is set, and your trials await.</p>
-                    <p>Something has gone amiss within the King's castle, and a horde of otherworldly horrors have wasted no time
-                        desecrating the kingdom.</p>
-                    <p>Accompanied only by your blade and wits, and perhaps a companion or two, you must fight back the terrible
-                        scourge that has encompassed the land and retake the kingdom's throne.  Who knows?  Perhaps you will be the one
-                        to sit upon it in due time.
-                    </p>
-                    <!-- Navigation Bar -->
-                    <div class="nav-bar">
-                        <a href="camp.html" class="nav-link">Go to Camp</a>
-                        <a href="login.html" class="nav-link">Return to Login</a>
-                        <a href="contact.html" class="nav-link">Contact Form</a>
+            <!-- Holds specifically the form -->
+            <div class="form-holder">
+                <!-- Styles the form -->
+                <form class="form-style" id="login-form">
+                    <div><h2>Sign up <br> 
+                        or <br> Login Here</h2></div>
+                    <div>
+                        <!-- Input accepts user email to parse for ReGex -->
+                        <label for="email">Email: </label><br>
+                        <input type="text" id="email" name="email" placeholder="name@host.com" style="height: 20px; border: 2px solid black;" required><br>
                     </div>
-                </div>
-                
+                    <div>
+                        <!-- Input accepts user password -->
+                        <label for="password">Password: </label><br>
+                        <input type="password" id="password" name="password" style="height: 20px; border: 2px solid black;" required>
+                    </div>
+                    <div>
+                        <!-- Button calls verifyEmail to compare the inputted email and password -->
+                        <button type="button" class="submit-button" onclick=verifyEmail()>Take Up Arms <img class="submit-icon" src="resource/images/sword icon.png" alt="Sword Picture"></button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img src="resource/images/Torch_Gif.gif" alt="Flickering Torch">
             </div>
         </div>
         
-        <script src="" async defer></script>
+        <script src="resource/scripts/scripts.js" async defer></script>
     </body>
 </html>
